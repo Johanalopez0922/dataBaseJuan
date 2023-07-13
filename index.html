@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Base </title>
+    <link rel="stylesheet" type="text/css" href="./index.css">   
+    
+</head>
+<body>    
+    <div>
+        <div id="form_header_container">
+            <h2 id="form_header">Add Data to Database:</h2><br/>
+        </div>
+        <div id="form_container">
+            <form id="signup-form" onload="initializeApp()"  onsubmit="">
+                <input type="text" id="name" placeholder="Name" >
+                <input type="email" id="email" placeholder="Email" >
+                <select id="option-select">
+                    <option value="">Select an option</option>
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <option value="Option3">Option 3</option>
+                </select>
+                <input type="text" id="identification" placeholder="ID" >
+                <input type="text" class="job" placeholder="Ocupation" >
+                
+                <div id="button_container">
+                    <button onclick="logIn()">Log In</button>
+                    <button onclick="signUp()">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"></script>   
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.0.0/firebase-database.js"></script> 
+    <script  type="module" src="./index.js"></script>
+</html>
